@@ -1,0 +1,4 @@
+Airmon-ng start wlan0 
+Ifconfig mon0 down
+macchanger -m 00:11:22:33:44:54 mon0
+Ifconfig mon0 up
